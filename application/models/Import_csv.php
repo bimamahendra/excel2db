@@ -10,7 +10,7 @@ class Import_csv extends CI_Model {
 	}
 
 	public function insert($data){
-		$this->db->insert('sp2d', $data);
+		$this->db->insert_batch('sp2d', $data);
 		return TRUE;
 	}
 }
